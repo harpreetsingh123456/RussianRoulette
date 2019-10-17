@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harrpeetFireGame", "harrpeetFireGame\harrpeetFireGame.csproj", "{71A9D601-F7EB-40E8-934D-0F639FE825D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harrpeetFireGameTests", "harrpeetFireGameTests\harrpeetFireGameTests.csproj", "{33EE8DFE-F4B7-4369-A063-270B9E0B3A14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71A9D601-F7EB-40E8-934D-0F639FE825D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A9D601-F7EB-40E8-934D-0F639FE825D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A9D601-F7EB-40E8-934D-0F639FE825D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A9D601-F7EB-40E8-934D-0F639FE825D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33EE8DFE-F4B7-4369-A063-270B9E0B3A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33EE8DFE-F4B7-4369-A063-270B9E0B3A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33EE8DFE-F4B7-4369-A063-270B9E0B3A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33EE8DFE-F4B7-4369-A063-270B9E0B3A14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00D592C1-9163-45E1-BA8F-250A5D8E6162}
+	EndGlobalSection
+EndGlobal
