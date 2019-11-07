@@ -31,9 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pbGun = new System.Windows.Forms.PictureBox();
             this.pbTarget = new System.Windows.Forms.PictureBox();
@@ -50,9 +51,10 @@
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(26, 308);
+            this.button1.Location = new System.Drawing.Point(39, 474);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 42);
+            this.button1.Size = new System.Drawing.Size(171, 65);
             this.button1.TabIndex = 2;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = false;
@@ -61,43 +63,34 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Olive;
+            this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(236, 249);
+            this.groupBox1.Location = new System.Drawing.Point(354, 383);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 167);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(500, 257);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Visible = false;
             // 
-            // button2
+            // button6
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(17, 29);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 42);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Load";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Maroon;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(165, 29);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 42);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Spin";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button6.BackColor = System.Drawing.Color.Maroon;
+            this.button6.Enabled = false;
+            this.button6.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(101, 180);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(256, 65);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Shoot Away";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button4
             // 
@@ -105,13 +98,43 @@
             this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(72, 88);
+            this.button4.Location = new System.Drawing.Point(101, 107);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 42);
+            this.button4.Size = new System.Drawing.Size(256, 65);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Shoot Away";
+            this.button4.Text = "Shoot";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Maroon;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(272, 32);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(171, 65);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Spin";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(8, 32);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(171, 65);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer1
             // 
@@ -120,9 +143,10 @@
             // 
             // pbGun
             // 
-            this.pbGun.Location = new System.Drawing.Point(195, 88);
+            this.pbGun.Location = new System.Drawing.Point(292, 135);
+            this.pbGun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbGun.Name = "pbGun";
-            this.pbGun.Size = new System.Drawing.Size(41, 24);
+            this.pbGun.Size = new System.Drawing.Size(62, 37);
             this.pbGun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGun.TabIndex = 4;
             this.pbGun.TabStop = false;
@@ -131,9 +155,10 @@
             // pbTarget
             // 
             this.pbTarget.Image = global::harrpeetFireGame.Properties.Resources.target;
-            this.pbTarget.Location = new System.Drawing.Point(568, 22);
+            this.pbTarget.Location = new System.Drawing.Point(852, 34);
+            this.pbTarget.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbTarget.Name = "pbTarget";
-            this.pbTarget.Size = new System.Drawing.Size(166, 174);
+            this.pbTarget.Size = new System.Drawing.Size(249, 268);
             this.pbTarget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbTarget.TabIndex = 1;
             this.pbTarget.TabStop = false;
@@ -141,9 +166,10 @@
             // pb_Gun
             // 
             this.pb_Gun.Image = global::harrpeetFireGame.Properties.Resources._1st;
-            this.pb_Gun.Location = new System.Drawing.Point(4, 22);
+            this.pb_Gun.Location = new System.Drawing.Point(6, 34);
+            this.pb_Gun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pb_Gun.Name = "pb_Gun";
-            this.pb_Gun.Size = new System.Drawing.Size(187, 174);
+            this.pb_Gun.Size = new System.Drawing.Size(280, 268);
             this.pb_Gun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Gun.TabIndex = 0;
             this.pb_Gun.TabStop = false;
@@ -153,9 +179,10 @@
             this.button5.BackColor = System.Drawing.Color.Maroon;
             this.button5.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(26, 374);
+            this.button5.Location = new System.Drawing.Point(39, 575);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 42);
+            this.button5.Size = new System.Drawing.Size(171, 65);
             this.button5.TabIndex = 5;
             this.button5.Text = "Try Again";
             this.button5.UseVisualStyleBackColor = false;
@@ -164,10 +191,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pbGun);
             this.Controls.Add(this.groupBox1);
@@ -175,6 +202,7 @@
             this.Controls.Add(this.pbTarget);
             this.Controls.Add(this.pb_Gun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -197,6 +225,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pbGun;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 

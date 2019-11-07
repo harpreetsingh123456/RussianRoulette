@@ -15,8 +15,8 @@ namespace harrpeetFireGame
         Setting obj = new Setting();
         Random rd = new Random();
         int sound = 0,bullet=0;
-        int clk = 0;
-        
+        int clk = 0,counter=0;
+        int shootaway = 0;
         public Form1()
         {
             InitializeComponent();
@@ -46,6 +46,7 @@ namespace harrpeetFireGame
             pb_Gun.Image = Properties.Resources.spin;
             button4.Enabled = true;
             button3.Enabled = false;
+            button6.Enabled = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace harrpeetFireGame
                 // enable the timer to work
                 timer1.Start();
                 // generate the sound of the  fire trigger 
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("fire.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.fire);
                 player.Play();
                 bullet++;
                 findWinner();
@@ -72,7 +73,7 @@ namespace harrpeetFireGame
             }
             else {
                 // generate the sound of the  empty trigger 
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("Empty.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.Empty);
                 player.Play();
 
             }
@@ -87,8 +88,7 @@ namespace harrpeetFireGame
                     MessageBox.Show("Congrats you are the winner of this game ");
                     button4.Enabled = false;
                     button5.Visible = true;
-
-                    groupBox1.Visible = false;
+                   
 
                     reset();
 
@@ -103,7 +103,7 @@ namespace harrpeetFireGame
                 MessageBox.Show("Now your bullets are finished try again to play");
                 button5.Visible = true;
                 button4.Enabled = false;
-                groupBox1.Visible = false;
+                
                 reset();
             }
 
@@ -128,6 +128,29 @@ namespace harrpeetFireGame
         {
             button5.Visible = false;
 
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //code to shootaway this code is used for the another chance to shoot  again using shoot away 
+            shootaway++;
+            //match the sound with the trigger and generate the sound of trigger when we use 2 shot then the group box will be hidden and the try again button will give us another chance 
+            if (shootaway == sound && counter <= 2)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.fire);
+                player.Play();
+                counter++;
+                shootaway = 0;
+            }
+            //code to open the try again button visible to reset the game again 
+            if(counter==2) {
+                button5.Visible = true;
+                button6.Enabled = false;
+                MessageBox.Show("Now your all chances are finished if you want to play again click on try again");
+                groupBox1.Visible = true;
+                
+            }
 
         }
 
